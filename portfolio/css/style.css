@@ -69,6 +69,24 @@ li {
 .lead {
   margin-bottom: 30px;
 }
+.gnavi{
+  display: flex;
+  flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+  margin:0 0 50px 0;
+  list-style: none;
+}
+
+.gnavi li a{
+  display: block;
+  padding:10px 30px;
+  text-decoration: none;
+  color: #333;
+}
+
+.gnavi li{
+  margin-bottom:20px;
+}
+
 
 /*--------------------------------
 ヘッダー
@@ -110,16 +128,6 @@ li {
   margin-right: 20px;
 }
 
-.header-nav-item a {
-  position: relative;
-  font-size: 13px;
-  font-weight: bold;
-  display: inline-block;
-  padding: 5px 0;
-  transition: .3s;
-  letter-spacing: .05em;
-  color: #333;
-}
 .header-nav-item a:after {
   position: absolute;
   bottom: 0;
@@ -334,6 +342,24 @@ li {
   background-position: right center;
 }
 
+.gnavi{
+  display: flex;
+  flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+  margin:0 0 50px 0;
+  list-style: none;
+}
+
+.gnavi li a{
+  display: block;
+  padding:10px 30px;
+  text-decoration: none;
+  color: #333;
+}
+
+.gnavi li{
+  margin-bottom:20px;
+}
+
 /*--------------------------------
  Skill
 ---------------------------------*/
@@ -365,6 +391,75 @@ li {
 .skill-name {
   margin-bottom: 3px;
 }
+.btnripple2{
+  /*波紋の基点とするためrelativeを指定*/
+position: relative;
+  /*波紋の形状*/
+display:inline-block;
+background:#333;
+width:70px;
+height:70px;
+border-radius: 50%;
+color:#ccc;
+  outline: none;
+  /*アニメーションの設定*/
+  transition: all .3s;
+}
+
+/*hoverした際の背景色の設定*/
+.btnripple2:hover{
+background:#666;  
+}
+
+/*波形を2つ設定*/
+.btnripple2::after,
+.btnripple2::before {
+  content: '';
+  /*絶対配置で波形の位置を決める*/
+  position: absolute;
+  left: -25%;
+  top: -25%;
+  /*波形の形状*/
+  border: 1px solid #333;
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+  /*はじめは不透明*/
+  opacity: 1;
+  /*ループするアニメーションの設定*/
+  animation:1s circleanime linear infinite;
+}
+
+/*波形の2つ目は0.5秒遅らせてアニメーション*/
+.btnripple2::before {
+  animation-delay:.5s; 
+}
+
+/*波形のアニメーション*/
+@keyframes circleanime{
+0%{
+  transform: scale(0.68);
+}
+100%{
+  transform: scale(1.2);
+  opacity: 0;
+}
+}
+
+/*中央矢印*/
+.btnripple2 span::after {
+  content: '';
+  /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+  top: 38%;
+  left: 45%;
+  /*矢印の形状*/
+  border: 14px solid transparent;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-left-color: #fff;
+}
+
 
 /*--------------------------------
  About

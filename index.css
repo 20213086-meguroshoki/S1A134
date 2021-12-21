@@ -1,0 +1,20 @@
+.btn_body{
+    display:flex; /*要素をflexに*/
+    height:200px; /*高さ*/
+    justify-content: center; /*横方向に中央寄せ*/
+    align-items:  center; /*縦方向に中央寄せ*/
+}
+
+.btn{
+    padding:10px; /*余白*/
+    background-color:#1e97cd; /*背景色*/
+    color:#fff; /*文字色*/
+    border-radius: 3px; /*角の丸み*/
+    box-shadow: 3px 5px 0 #2caeeb; /*ボタンの影*/
+    transition: 0.3s; /*元に戻る時の秒数*/
+}
+
+a.btn:hover{
+    transition: 0.3s; /*変化する秒数*/
+    transform: translateY(0.1875em); /*縦方向に移動する*/
+    box-shadow:none; /*影を消す*/
