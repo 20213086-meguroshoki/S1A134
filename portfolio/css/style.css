@@ -3,7 +3,7 @@ body {
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: .8px;
-  color: #333;
+  color: rgb(202, 199, 199);
 }
 
 a {
@@ -720,5 +720,8 @@ body {
 }
 
 .logo {
-  max-width: 50%;
+  max-width: 20%;
+}
+body {
+  background: rgb(0, 0, 0);
 }
