@@ -195,7 +195,7 @@ li {
   margin-bottom: 30px;
 }
 
-/*--------------------------------
+/*-------------------------------
  Works
 ---------------------------------*/
 .works-list {
@@ -713,4 +713,12 @@ background:#666;
   .article {
     padding: 50px 0;
   }
+}
+body {
+  height: 170vh;
+  background: url() right bottom no-repeat;
+}
+
+.logo {
+  max-width: 50%;
 }
