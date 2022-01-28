@@ -208,11 +208,11 @@ li {
   width: 31.74603%;
   margin-right: 1.58730%;
   margin-bottom: 40px;
-  color: #333;
+  color: rgb(70, 70, 70);
 }
 
 .works-img img {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #000000;
 }
 
 .btn-denim {
@@ -256,7 +256,7 @@ li {
   position: absolute;
   top: 50%;
   left: 50%;
-  background : #FFF;
+  background : rgb(255, 255, 255);
   opacity: 0;
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transition: .2s;
@@ -457,7 +457,7 @@ background:#666;
   border: 14px solid transparent;
   border-top-width: 10px;
   border-bottom-width: 10px;
-  border-left-color: #fff;
+  border-left-color: #FFF;
 }
 
 
@@ -724,4 +724,22 @@ body {
 }
 body {
   background: rgb(0, 0, 0);
+}
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 0%;
+  }
+  100% {
+  background-position: 0% 100%;
+  }
 }
