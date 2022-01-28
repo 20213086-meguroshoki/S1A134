@@ -10,16 +10,16 @@ body {
     padding: 0;
 }
 article {
-    width: 840px;
-    background: white;
-    padding: 20px;
+    width: 800px;
+    max-width: 90%;
     margin: 20px auto;
+    padding: 20px;
+    background: #fff;
     position: relative;
 }
 header {
     background: #f83;
     color: #fff;
-    max-width: 800px;
     padding: 10px;
     position: absolute;
     top: 40px;
@@ -32,7 +32,7 @@ img {
     display: block;
     margin-bottom: 40px;
 }
-h2.h2{
+h2.h2 {
     color: #f83;
     margin: 15px;
 }
@@ -58,7 +58,7 @@ p.btn a {
     display: block;
     padding: 20px;
     background: #f83;
-    color:white;
+    color:#fff;
     text-decoration: none;
     border-radius: 8px;
     font-size:1.2em;
