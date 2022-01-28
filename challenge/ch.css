@@ -27,27 +27,34 @@ header {
 }
 section {
     border: 1px solid #ddd;
+    padding: 20px;
 }
 img {
     display: block;
     margin-bottom: 40px;
+    width: 100%;
+    height: auto;
 }
-h2.h2 {
+h2 {
     color: #f83;
-    margin: 15px;
+    margin-bottom: 15px;
 }
-ul {
-    margin-bottom: 20px;
+ul,ol{
+    padding-left: 20px;
 }
-.margin1 {
-    margin-bottom: 20px;
-    padding: 0 20px;
-}
+
+
 address {
     text-align: center;
 }
+
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
 .btnArea {
-    margin-top: 40px;
+    margin: 40px;
 }
 p.btn {
     margin: 0 auto 40px;
@@ -62,8 +69,4 @@ p.btn a {
     text-decoration: none;
     border-radius: 8px;
     font-size:1.2em;
-}
-.flexContainer {
-    display: flex;
-    justify-content: space-around;
 }
